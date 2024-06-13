@@ -174,6 +174,20 @@ class Detections:
                 is_data_equal(self.data, other.data),
             ]
         )
+    
+    @classmethod
+    def from_yolox(cls, yolox_results) -> Detections:
+        """
+        Creates a Detections instance from yolox inference result.
+        """
+        return cls(
+            xyxy=yolox_results[0],
+            confidence=yolox_results[1],
+            class_id=yolox_results[2],
+            tracker_id=None,
+            data={"class_name": np.array(yolox_results[3])}
+            
+        )
 
     @classmethod
     def from_yolov5(cls, yolov5_results) -> Detections:
