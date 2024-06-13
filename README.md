@@ -1,3 +1,7 @@
+yolox compatible fork (in dev.). see folder yolox_notebooks and its [intructions.md](yolox_notebooks/instructions.md) for details. for quick view, see the [ipynb notebook example](yolox_notebooks/scratch.ipynb).
+
+
+
 <div align="center">
   <p>
     <a align="center" href="" target="https://supervision.roboflow.com">
